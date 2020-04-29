@@ -8,6 +8,7 @@ else:
     lastdigit = number % 10
 print("Last digit of {:d} is {:d} and is ".format(number, lastdigit), end="")
 
+
 if lastdigit > 5:
     print("greater than 5")
 elif lastdigit == 0:
