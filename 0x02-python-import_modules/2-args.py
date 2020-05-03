@@ -2,7 +2,7 @@
 if __name__ == "__main__":
     import sys
     index = len(sys.argv) - 1
-    if index == -1:
+    if index -= 1:
         print("0 arguments.")
     if index == 2:
         print(index, "argument:")
