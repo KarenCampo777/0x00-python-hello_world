@@ -2,9 +2,9 @@
 if __name__ == "__main__":
     import sys
     index = len(sys.argv) - 1
-    if index -= 1:
+    if index == 0:
         print("0 arguments.")
-    if index == 2:
+    elif index == 1:
         print(index, "argument:")
         print("{:d}:".format(index), sys.argv[index], end='\n')
 
