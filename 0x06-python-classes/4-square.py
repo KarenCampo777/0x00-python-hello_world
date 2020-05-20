@@ -1,4 +1,4 @@
- #!/usr/bin/python3
+#!/usr/bin/python3
 """Creates square"""
 
 
@@ -8,16 +8,17 @@ class Square:
     def __init__(self, size=0):
         """Function that initializes atribute for the zise of the square"""
         try:
-            if size < 0:
+            if type(size) is not int:
+                raise TypeError("size must be an integer")
+            if value < 0:
                 raise ValueError("size must be >= 0")
-            self._Square__size = size
-        except TypeError:
-            raise TypeError("size must be an integer")
-
+            self.__size = size
+    
     @property
     def size(self):
         """The size"""
-        return self._Square__size
+        return self.__size
+
 
     @size.setter
     def size(self, value):
@@ -25,10 +26,10 @@ class Square:
         try:
             if value < 0:
                 raise ValueError("size must be >= 0")
-            self._Square__size = value
+            self.__size = value
         except TypeError:
             raise TypeError("size must be an integer")
 
     def area(self):
         """square area"""
-        return (self._Square__size ** 2)
+        return self.__size ** 2
