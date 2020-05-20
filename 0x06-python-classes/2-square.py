@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-"""A square"""
+"""Create a square"""
 
 
 class Square:
+    """The class"""
     def __init__(self, size=0):
         """Initializes data"""
         if type(size) is not int:
