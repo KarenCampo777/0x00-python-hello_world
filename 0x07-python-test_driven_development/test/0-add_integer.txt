@@ -1,0 +1,82 @@
+Test Driven Develoment (TDD)
+
+This _is a test _file _for task0. Its porpuse _is to test _all possible casses on my program
+===================================
+Using function add_int() 
+-------------------------------------------------------
+import add_int from module_name
+
+    >>> add_int = __import__('module_name').add_int
+
+    >>> add_int(2, 2)
+    4
+
+Regular cases:
+output the result of the sum of two positive integers:
+
+    >>> add_int(1, 2)
+    3
+
+output the result of the sum of both negative numbers are negatives:
+
+    >>> add_int(-3, -3)
+    -6
+
+output the result of the  sum of two numbers with opposite sign:
+
+    >>> add_int(1, -1)
+    0
+
+    >>> add_int(-2, 1)
+    1
+
+    >>> add_int(3, -5)
+    -2
+
+Floats cases:
+Floats cast as integers:
+
+    >>> add_int(10.5, -3)
+    7
+
+Cast two float numbers as integer:
+
+    >>> add_int(8.2, 2.15)
+    10
+
+    >>> add_int(3.5, 3.5)
+    7
+
+
+None argument and error  cases:
+The output should be an error:
+
+    >>> add_int(None)
+     
+    TypeError: a must be an integer
+
+The output should be an error:
+
+    >>> add_int(float("13!")
+
+    ValueError: cannot convert a float 13! to an integer
+
+
+Inputs different than integers and floats
+
+    >>> add_int("vegeta", 777)
+
+    TypeError: a must be an integer
+
+Empty or space input:
+
+    >>> add_int("")
+
+    TypeError: a must be an integer
+
+
+A huge  number number case, like Google:
+
+    >>> add_int(100(10^100))
+        
+    TypeError: a must be an integer (stack overflow?)
