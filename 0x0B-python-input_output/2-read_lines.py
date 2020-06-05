@@ -9,3 +9,4 @@ def read_lines(filename="", nb_lines=0):
             counter += 1
             if (nb_lines <= 0) or (nb_lines < counter):
                 print(line, end="")
+    file.close()
