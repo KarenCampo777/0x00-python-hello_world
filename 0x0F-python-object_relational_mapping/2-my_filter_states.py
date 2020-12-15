@@ -13,7 +13,7 @@ if __name__ == "__main__":
     cur = db.cursor()
     exe = cur.execute("""SELECT * FROM
                       states WHERE name LIKE BINARY
-                      {}" ORDER BY id ASC""" .format(argv[4]))
+                      "{}" ORDER BY states.id ASC""".format(argv[4]))
     content = cur.fetchall()
     for b in content:
         print(b)
