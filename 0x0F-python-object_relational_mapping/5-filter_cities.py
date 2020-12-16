@@ -19,14 +19,11 @@ if __name__ == "__main__":
                 WHERE states.id = cities.state_id and
                 states.name = %s ORDER BY cities.id ASC""", (argv[4], ))
     content = cur.fetchall()
-    i = 1
-    size = len(content)
-    for a in content:
-        if i != size:
-            print('{}, '.format(a[0]), end='')
-        else:
-            print(a[0])
-        i += 1
-
+    sep = ""
+    for row in content:
+        for col in row:
+            print('{}{}'.format(sep, col), end='')
+            sep = ", "
+    print()
     cur.close()
     db.close()
