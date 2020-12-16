@@ -1,9 +1,10 @@
 #!/usr/bin/python3
+"""takes in the name of a state
+    as an argument and lists all cities of that state
+"""
+
 from sys import argv
 import MySQLdb
-"""takes in the name of a state
-    as an argument and lists all cities of that state"""
-
 
 if __name__ == "__main__":
 
