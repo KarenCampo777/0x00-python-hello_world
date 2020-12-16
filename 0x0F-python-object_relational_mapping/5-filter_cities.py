@@ -27,6 +27,5 @@ if __name__ == "__main__":
             print(a[0])
         i += 1
 
-    print()
     cur.close()
     db.close()
