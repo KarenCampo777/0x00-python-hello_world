@@ -8,7 +8,7 @@ from sys import argv
 from urllib import request
 from urllib import error
 
-if ___name__ == "__main__":
+if __name__ == "__main__":
     intra = argv[1]
     req = request.Request(intra)
     try:
