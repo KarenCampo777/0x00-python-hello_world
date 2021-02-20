@@ -1,6 +1,6 @@
 #!/usr/bin/node
 // C is fun?
-Class square extends require('./5-square') {
+Class Square extends require('./5-square') {
   charPrint (obj) {
     if (obj === undefined) {
       obj = 'X';
